@@ -44,6 +44,10 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 */
 
 let colors = {
+  'theme-blue':'#3c64c2',
+  'theme-yellow': '#ffc740',
+  'theme-purple': '#4b35ef',
+
   'transparent': 'transparent',
 
   'black': '#22292f',
@@ -195,6 +199,7 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'Lato',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
