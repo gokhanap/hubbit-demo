@@ -46,7 +46,8 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 let colors = {
   'theme-blue':'#3c64c2',
   'theme-yellow': '#ffc740',
-  'theme-purple': '#4b35ef',
+  'theme-purple': '#6400e4',
+  'theme-grey-dark': '#484848',
 
   'transparent': 'transparent',
 
@@ -171,10 +172,14 @@ module.exports = {
   */
 
   screens: {
-    'sm': '576px',
-    'md': '768px',
-    'lg': '992px',
-    'xl': '1200px',
+    'max-1': {'max': '37.5rem'},
+    'max-2': {'max': '735px'},
+    'max-3': {'max': '48rem'},
+    'max-4': {'max': '51rem'},
+    'min-1': '48rem',
+    'min-2': '825px',
+    'min-3': '64rem',
+    'min-4': '75rem',
   },
 
 
@@ -198,8 +203,9 @@ module.exports = {
   */
 
   fonts: {
+    'heading': ['RegularBold'],
     'sans': [
-      'Lato',
+      'NunitoSans',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -263,9 +269,14 @@ module.exports = {
     'lg': '1.125rem',   // 18px
     'xl': '1.25rem',    // 20px
     '2xl': '1.5rem',    // 24px
+    '2xl-2': '1.625rem',    // 26px
+    '2xl-3': '1.75rem',    // 28px
     '3xl': '1.875rem',  // 30px
+    '3xl-2': '2rem',   // 36px
     '4xl': '2.25rem',   // 36px
     '5xl': '3rem',      // 48px
+    '6xl': '2.5rem',      // 40px
+    '7xl': '4rem',      // 64px
   },
 
 
@@ -314,7 +325,9 @@ module.exports = {
     'none': 1,
     'tight': 1.25,
     'normal': 1.5,
+    'md-loose': 1.675,
     'loose': 2,
+    'x-loose': 3,
   },
 
 
@@ -334,6 +347,7 @@ module.exports = {
   tracking: {
     'tight': '-0.05em',
     'normal': '0',
+    'md': '0.025em',
     'wide': '0.05em',
   },
 
@@ -501,6 +515,8 @@ module.exports = {
     '32': '8rem',
     '48': '12rem',
     '64': '16rem',
+    '68': '17rem',
+    '78': '19.5rem',
     '1/2': '50%',
     '1/3': '33.33333%',
     '2/3': '66.66667%',
@@ -535,6 +551,7 @@ module.exports = {
 
   height: {
     'auto': 'auto',
+    '20p': '20%',
     'px': '1px',
     '1': '0.25rem',
     '2': '0.5rem',
@@ -545,6 +562,7 @@ module.exports = {
     '8': '2rem',
     '10': '2.5rem',
     '12': '3rem',
+    '14': '3.5rem',
     '16': '4rem',
     '24': '6rem',
     '32': '8rem',
@@ -572,6 +590,7 @@ module.exports = {
 
   minWidth: {
     '0': '0',
+    '19-5': '195rem',
     'full': '100%',
   },
 
@@ -667,6 +686,9 @@ module.exports = {
 
   padding: {
     'px': '1px',
+    '6px': '6px',
+    '12px': '12px',
+    '25px': '25px',
     '0': '0',
     '1': '0.25rem',
     '2': '0.5rem',
@@ -677,10 +699,13 @@ module.exports = {
     '8': '2rem',
     '10': '2.5rem',
     '12': '3rem',
+    '12.5': '3.125rem',
     '16': '4rem',
     '20': '5rem',
     '24': '6rem',
     '32': '8rem',
+    '37.5': '9.375rem',
+    '49': '12.25rem',
   },
 
 
@@ -701,6 +726,8 @@ module.exports = {
   */
 
   margin: {
+    '-14': '-14.0625rem',
+    '-5': '-5rem',
     'auto': 'auto',
     'px': '1px',
     '0': '0',
@@ -713,7 +740,9 @@ module.exports = {
     '8': '2rem',
     '10': '2.5rem',
     '12': '3rem',
+    '14': '3.5rem',
     '16': '4rem',
+    '17': '4.375rem',
     '20': '5rem',
     '24': '6rem',
     '32': '8rem',
